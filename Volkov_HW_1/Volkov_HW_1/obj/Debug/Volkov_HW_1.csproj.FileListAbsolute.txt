@@ -1,0 +1,9 @@
+D:\Projects\WinForms WPF\Volkov_HW_1\Volkov_HW_1\obj\Debug\Volkov_HW_1.csproj.AssemblyReference.cache
+D:\Projects\WinForms WPF\Volkov_HW_1\Volkov_HW_1\obj\Debug\Volkov_HW_1.csproj.SuggestedBindingRedirects.cache
+D:\Projects\WinForms WPF\Volkov_HW_1\Volkov_HW_1\obj\Debug\Volkov_HW_1.csproj.CoreCompileInputs.cache
+D:\Projects\WinForms WPF\Volkov_HW_1\Volkov_HW_1\bin\Debug\Volkov_HW_1.exe.config
+D:\Projects\WinForms WPF\Volkov_HW_1\Volkov_HW_1\bin\Debug\Volkov_HW_1.exe
+D:\Projects\WinForms WPF\Volkov_HW_1\Volkov_HW_1\bin\Debug\Volkov_HW_1.pdb
+D:\Projects\WinForms WPF\Volkov_HW_1\Volkov_HW_1\obj\Debug\Volkov_HW_1.exe
+D:\Projects\WinForms WPF\Volkov_HW_1\Volkov_HW_1\obj\Debug\Volkov_HW_1.pdb
+D:\Projects\WinForms WPF\Volkov_HW_1\Volkov_HW_1\obj\Debug\Volkov_HW_1.csproj.CopyComplete

@@ -1,0 +1,6 @@
+D:\Projects\WinForms WPF\ILog\ILog\bin\Debug\ILog.dll
+D:\Projects\WinForms WPF\ILog\ILog\bin\Debug\ILog.pdb
+D:\Projects\WinForms WPF\ILog\ILog\obj\Debug\ILog.csproj.AssemblyReference.cache
+D:\Projects\WinForms WPF\ILog\ILog\obj\Debug\ILog.csproj.CoreCompileInputs.cache
+D:\Projects\WinForms WPF\ILog\ILog\obj\Debug\ILog.dll
+D:\Projects\WinForms WPF\ILog\ILog\obj\Debug\ILog.pdb

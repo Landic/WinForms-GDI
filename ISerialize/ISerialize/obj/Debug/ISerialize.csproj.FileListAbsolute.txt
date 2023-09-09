@@ -1,0 +1,9 @@
+D:\Projects\WinForms WPF\ISerialize\ISerialize\obj\Debug\ISerialize.csproj.AssemblyReference.cache
+D:\Projects\WinForms WPF\ISerialize\ISerialize\obj\Debug\ISerialize.csproj.CoreCompileInputs.cache
+D:\Projects\WinForms WPF\ISerialize\ISerialize\bin\Debug\ISerialize.dll
+D:\Projects\WinForms WPF\ISerialize\ISerialize\bin\Debug\ISerialize.pdb
+D:\Projects\WinForms WPF\ISerialize\ISerialize\bin\Debug\CarrierInformation.dll
+D:\Projects\WinForms WPF\ISerialize\ISerialize\bin\Debug\ILog.dll
+D:\Projects\WinForms WPF\ISerialize\ISerialize\obj\Debug\ISerialize.csproj.CopyComplete
+D:\Projects\WinForms WPF\ISerialize\ISerialize\obj\Debug\ISerialize.dll
+D:\Projects\WinForms WPF\ISerialize\ISerialize\obj\Debug\ISerialize.pdb

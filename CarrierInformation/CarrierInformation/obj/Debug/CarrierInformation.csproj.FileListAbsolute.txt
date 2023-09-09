@@ -1,0 +1,12 @@
+D:\Projects\WinForms WPF\CarrierInformation\CarrierInformation\obj\Debug\CarrierInformation.csproj.AssemblyReference.cache
+D:\Projects\WinForms WPF\CarrierInformation\CarrierInformation\obj\Debug\CarrierInformation.csproj.CoreCompileInputs.cache
+D:\Projects\WinForms WPF\CarrierInformation\CarrierInformation\bin\Debug\CarrierInformation.dll
+D:\Projects\WinForms WPF\CarrierInformation\CarrierInformation\bin\Debug\CarrierInformation.pdb
+D:\Projects\WinForms WPF\CarrierInformation\CarrierInformation\bin\Debug\ILog.dll
+D:\Projects\WinForms WPF\CarrierInformation\CarrierInformation\bin\Debug\Microsoft.Practices.EnterpriseLibrary.SemanticLogging.dll
+D:\Projects\WinForms WPF\CarrierInformation\CarrierInformation\bin\Debug\Newtonsoft.Json.dll
+D:\Projects\WinForms WPF\CarrierInformation\CarrierInformation\bin\Debug\Microsoft.Practices.EnterpriseLibrary.SemanticLogging.xml
+D:\Projects\WinForms WPF\CarrierInformation\CarrierInformation\bin\Debug\Newtonsoft.Json.xml
+D:\Projects\WinForms WPF\CarrierInformation\CarrierInformation\obj\Debug\CarrierInformation.csproj.CopyComplete
+D:\Projects\WinForms WPF\CarrierInformation\CarrierInformation\obj\Debug\CarrierInformation.dll
+D:\Projects\WinForms WPF\CarrierInformation\CarrierInformation\obj\Debug\CarrierInformation.pdb
