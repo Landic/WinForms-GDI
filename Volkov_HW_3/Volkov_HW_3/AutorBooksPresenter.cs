@@ -41,7 +41,7 @@ namespace Volkov_HW_3
         {
             if (authorname != null) // если не возвращает null то фильтрация продолжается
             {
-                var filteredBooks = model.books.Where(b => b.AuthorBook.NameAutor == authorname).ToList();
+                var filteredBooks = model.books.Where(i => i.AuthorBook.NameAutor == authorname).Select(i => i.NameBook).ToList();
                 view.DisplayFilteredBooks(filteredBooks);
             }
             else
@@ -52,8 +52,18 @@ namespace Volkov_HW_3
 
         private void Update() // обновляет весь список
         {
-            view.DisplayAuthors(model.authors);
-            view.DisplayBooks(model.books);
+            List<string> authors = new List<string>();
+            foreach (var i in model.authors)
+            {
+                authors.Add(i.NameAutor);
+            }
+            view.DisplayAuthors(authors);
+            List<string> books = new List<string>();
+            foreach(var i in model.books)
+            {
+                books.Add(i.NameBook);
+            }
+            view.DisplayBooks(books);
         }
 
         private void AddAutor(string nameauthor) // добавление автора

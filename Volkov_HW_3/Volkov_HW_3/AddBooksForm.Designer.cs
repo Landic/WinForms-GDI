@@ -29,28 +29,16 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AddBooksForm));
-            AuthorTextBox = new TextBox();
             BookTextBox = new TextBox();
-            label1 = new Label();
             label2 = new Label();
             CancelButton = new Button();
             OkButton = new Button();
             SuspendLayout();
             // 
-            // AuthorTextBox
-            // 
-            resources.ApplyResources(AuthorTextBox, "AuthorTextBox");
-            AuthorTextBox.Name = "AuthorTextBox";
-            // 
             // BookTextBox
             // 
             resources.ApplyResources(BookTextBox, "BookTextBox");
             BookTextBox.Name = "BookTextBox";
-            // 
-            // label1
-            // 
-            resources.ApplyResources(label1, "label1");
-            label1.Name = "label1";
             // 
             // label2
             // 
@@ -79,19 +67,15 @@
             Controls.Add(OkButton);
             Controls.Add(CancelButton);
             Controls.Add(label2);
-            Controls.Add(label1);
             Controls.Add(BookTextBox);
-            Controls.Add(AuthorTextBox);
+            MaximizeBox = false;
             Name = "AddBooksForm";
             ResumeLayout(false);
             PerformLayout();
         }
 
         #endregion
-
-        private TextBox AuthorTextBox;
         private TextBox BookTextBox;
-        private Label label1;
         private Label label2;
         private Button CancelButton;
         private Button OkButton;

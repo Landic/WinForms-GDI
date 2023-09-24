@@ -7,6 +7,7 @@ namespace Volkov_HW_3
         public Form1()
         {
             InitializeComponent();
+            this.FormBorderStyle = FormBorderStyle.FixedSingle;
         }
 
         public event Action<string> AddAuthor;
@@ -19,12 +20,12 @@ namespace Volkov_HW_3
         public event EventHandler<EventArgs> SaveXML;
         public event EventHandler<EventArgs> LoadXML;
 
-        void IAutorBooksView.DisplayAuthors(List<Author> authors) // вывод всех авторов нужно дл€ обновление информации
+        void IAutorBooksView.DisplayAuthors(List<string> authors) // вывод всех авторов нужно дл€ обновление информации
         {
             AuthotComboBox.Items.Clear();
-            foreach (var i in authors)
+            foreach (var author in authors)
             {
-                AuthotComboBox.Items.Add(i.NameAutor);
+                AuthotComboBox.Items.Add(author);
             }
             if (AuthotComboBox.Items.Count > 0)
             {
@@ -32,26 +33,25 @@ namespace Volkov_HW_3
             }
         }
 
-        void IAutorBooksView.DisplayBooks(List<Books> books) // вывод всех книг нужно дл€ обновление информации
+        void IAutorBooksView.DisplayBooks(List<string> books) // вывод всех книг нужно дл€ обновление информации
         {
             BookList.Items.Clear();
             foreach (var i in books)
             {
-                BookList.Items.Add(i.NameBook);
+                BookList.Items.Add(i);
             }
         }
 
-        void IAutorBooksView.DisplayFilteredBooks(List<Books> books) // фильтраци€ 
+        void IAutorBooksView.DisplayFilteredBooks(List<string> books) // фильтраци€ 
         {
             BookList.Items.Clear();
-
-            foreach (Books i in books)
+            foreach (var i in books)
             {
-                BookList.Items.Add($"{i.NameBook}");
+                BookList.Items.Add(i);
             }
         }
 
-        private void AddAuthorToolStripMenuItem_Click(object sender, EventArgs e) 
+        private void AddAuthorToolStripMenuItem_Click(object sender, EventArgs e)
         {
             using (var addAuthorForm = new AddAuthorForm())
             {
@@ -68,7 +68,7 @@ namespace Volkov_HW_3
             {
                 if (AddBooksForm.ShowDialog() == DialogResult.OK)
                 {
-                    AddBook?.Invoke(AddBooksForm.AuthorName, AddBooksForm.BooksName);
+                    AddBook?.Invoke(AuthotComboBox.SelectedItem.ToString(), AddBooksForm.BooksName);
                 }
             }
         }
@@ -77,8 +77,13 @@ namespace Volkov_HW_3
         {
             if (AuthotComboBox.SelectedItem != null)
             {
-                string selectedAuthor = AuthotComboBox.SelectedItem.ToString();
-                DeleteAuthor?.Invoke(selectedAuthor);
+                DialogResult result = MessageBox.Show("¬ы уверены что хотите удалить автора?", "Authors and books", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                if(result == DialogResult.Yes)
+                {
+                    string selectedAuthor = AuthotComboBox.SelectedItem.ToString();
+                    DeleteAuthor?.Invoke(selectedAuthor);
+                }
+                
             }
         }
 
@@ -88,7 +93,7 @@ namespace Volkov_HW_3
             {
                 if (EditAuthorForm.ShowDialog() == DialogResult.OK)
                 {
-                    EditAuthor?.Invoke(EditAuthorForm.OldAuthor, EditAuthorForm.NewAuthor);
+                    EditAuthor?.Invoke(AuthotComboBox.SelectedItem.ToString(), EditAuthorForm.NewAuthor);
                 }
             }
         }
@@ -99,7 +104,7 @@ namespace Volkov_HW_3
             {
                 if (EditBookForm.ShowDialog() == DialogResult.OK)
                 {
-                    EditBook?.Invoke(EditBookForm.OldName, EditBookForm.NewName);
+                    EditBook?.Invoke(BookList.SelectedItem.ToString(), EditBookForm.NewName);
                 }
             }
         }
@@ -108,8 +113,12 @@ namespace Volkov_HW_3
         {
             if (BookList.SelectedItem != null)
             {
-                string selectedBook = BookList.SelectedItem.ToString();
-                DeleteBook?.Invoke(selectedBook);
+                DialogResult result = MessageBox.Show("¬ы уверены что хотите удалить книгу?", "Authors and books", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                if (result == DialogResult.Yes)
+                {
+                    string selectedBook = BookList.SelectedItem.ToString();
+                    DeleteBook?.Invoke(selectedBook);
+                }
             }
         }
 

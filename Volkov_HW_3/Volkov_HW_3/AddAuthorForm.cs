@@ -16,6 +16,7 @@ namespace Volkov_HW_3
         public AddAuthorForm()
         {
             InitializeComponent();
+            this.FormBorderStyle = FormBorderStyle.FixedSingle;
         }
 
         private void OkButton_Click(object sender, EventArgs e)

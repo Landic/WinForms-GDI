@@ -18,9 +18,9 @@ namespace Volkov_HW_3
         event EventHandler<EventArgs> SaveXML;
         event EventHandler<EventArgs> LoadXML;
 
-        void DisplayAuthors(List<Author> authors);
-        void DisplayBooks(List<Books> books);
-        void DisplayFilteredBooks(List<Books> books);
+        void DisplayAuthors(List<string> authors);
+        void DisplayBooks(List<string> books);
+        void DisplayFilteredBooks(List<string> books);
 
         void DisplayError(string message);
     }

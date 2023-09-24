@@ -12,17 +12,16 @@ namespace Volkov_HW_3
 {
     public partial class AddBooksForm : Form
     {
-        public string AuthorName { get; set; }
         public string BooksName { get; set; }
 
         public AddBooksForm()
         {
             InitializeComponent();
+            this.FormBorderStyle = FormBorderStyle.FixedSingle;
         }
 
         private void OkButton_Click(object sender, EventArgs e)
         {
-            AuthorName = AuthorTextBox.Text;
             BooksName = BookTextBox.Text;
             DialogResult = DialogResult.OK;
             Close();

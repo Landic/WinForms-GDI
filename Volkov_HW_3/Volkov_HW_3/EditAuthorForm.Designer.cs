@@ -29,31 +29,22 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(EditAuthorForm));
-            OldAuthorTextBox = new TextBox();
             NewAuthorTextBox = new TextBox();
             CancelButton = new Button();
             EditButton = new Button();
-            label1 = new Label();
             label2 = new Label();
             SuspendLayout();
             // 
-            // OldAuthorTextBox
-            // 
-            OldAuthorTextBox.Location = new Point(12, 22);
-            OldAuthorTextBox.Name = "OldAuthorTextBox";
-            OldAuthorTextBox.Size = new Size(264, 23);
-            OldAuthorTextBox.TabIndex = 0;
-            // 
             // NewAuthorTextBox
             // 
-            NewAuthorTextBox.Location = new Point(12, 63);
+            NewAuthorTextBox.Location = new Point(12, 23);
             NewAuthorTextBox.Name = "NewAuthorTextBox";
             NewAuthorTextBox.Size = new Size(264, 23);
             NewAuthorTextBox.TabIndex = 0;
             // 
             // CancelButton
             // 
-            CancelButton.Location = new Point(12, 98);
+            CancelButton.Location = new Point(12, 58);
             CancelButton.Name = "CancelButton";
             CancelButton.Size = new Size(75, 23);
             CancelButton.TabIndex = 1;
@@ -63,7 +54,7 @@
             // 
             // EditButton
             // 
-            EditButton.Location = new Point(178, 98);
+            EditButton.Location = new Point(178, 58);
             EditButton.Name = "EditButton";
             EditButton.Size = new Size(98, 23);
             EditButton.TabIndex = 1;
@@ -71,19 +62,10 @@
             EditButton.UseVisualStyleBackColor = true;
             EditButton.Click += EditButton_Click;
             // 
-            // label1
-            // 
-            label1.AutoSize = true;
-            label1.Location = new Point(12, 4);
-            label1.Name = "label1";
-            label1.Size = new Size(40, 15);
-            label1.TabIndex = 2;
-            label1.Text = "Автор";
-            // 
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(12, 48);
+            label2.Location = new Point(12, 8);
             label2.Name = "label2";
             label2.Size = new Size(107, 15);
             label2.TabIndex = 2;
@@ -93,14 +75,13 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(288, 133);
+            ClientSize = new Size(288, 90);
             Controls.Add(label2);
-            Controls.Add(label1);
             Controls.Add(EditButton);
             Controls.Add(CancelButton);
             Controls.Add(NewAuthorTextBox);
-            Controls.Add(OldAuthorTextBox);
             Icon = (Icon)resources.GetObject("$this.Icon");
+            MaximizeBox = false;
             Name = "EditAuthorForm";
             Text = "Edit author";
             ResumeLayout(false);
@@ -108,12 +89,9 @@
         }
 
         #endregion
-
-        private TextBox OldAuthorTextBox;
         private TextBox NewAuthorTextBox;
         private Button CancelButton;
         private Button EditButton;
-        private Label label1;
         private Label label2;
     }
 }

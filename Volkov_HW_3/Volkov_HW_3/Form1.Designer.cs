@@ -166,7 +166,9 @@
             Controls.Add(menuStrip1);
             Icon = (Icon)resources.GetObject("$this.Icon");
             MainMenuStrip = menuStrip1;
+            MaximizeBox = false;
             Name = "Form1";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "Author and books";
             menuStrip1.ResumeLayout(false);
             menuStrip1.PerformLayout();

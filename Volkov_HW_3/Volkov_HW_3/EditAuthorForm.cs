@@ -12,17 +12,16 @@ namespace Volkov_HW_3
 {
     public partial class EditAuthorForm : Form
     {
-        public string OldAuthor { get; set; }
         public string NewAuthor { get; set; }
 
         public EditAuthorForm()
         {
             InitializeComponent();
+            this.FormBorderStyle = FormBorderStyle.FixedSingle;
         }
 
         private void EditButton_Click(object sender, EventArgs e)
         {
-            OldAuthor = OldAuthorTextBox.Text;
             NewAuthor = NewAuthorTextBox.Text;
             DialogResult = DialogResult.OK;
             Close();

@@ -118,22 +118,13 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="AuthorTextBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>309, 23</value>
+  <data name="BookTextBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 23</value>
   </data>
   <data name="BookTextBox.Size" type="System.Drawing.Size, System.Drawing">
     <value>309, 23</value>
   </data>
   <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="label1.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>40, 15</value>
-  </data>
-  <data name="label1.Text" xml:space="preserve">
-    <value>Автор</value>
-  </data>
   <data name="label2.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
@@ -141,11 +132,17 @@
   <data name="label2.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
+  <data name="label2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 5</value>
+  </data>
   <data name="label2.Size" type="System.Drawing.Size, System.Drawing">
     <value>94, 15</value>
   </data>
   <data name="label2.Text" xml:space="preserve">
     <value>Название книги</value>
+  </data>
+  <data name="CancelButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 52</value>
   </data>
   <data name="CancelButton.Text" xml:space="preserve">
     <value>Отмена</value>
@@ -153,11 +150,14 @@
   <data name="OkButton.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
+  <data name="OkButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>246, 52</value>
+  </data>
   <data name="OkButton.Text" xml:space="preserve">
     <value>Добавить</value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>333, 117</value>
+    <value>333, 80</value>
   </data>
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
